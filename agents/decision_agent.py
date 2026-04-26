@@ -1,17 +1,12 @@
 ## decision_agent.py
 
 def decision(data):
-
     if data.get("ai") == "Yes":
         data["decision"] = "Rejected - AI"
-
     elif data.get("score", 0) >= 80:
         data["decision"] = "Selected"
-
-    elif data.get("score", 0) >= 70:
+    elif data.get("score", 0) >= 60:
         data["decision"] = "Hold"
-
     else:
         data["decision"] = "Rejected"
-
     return data
