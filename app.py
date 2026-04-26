@@ -74,6 +74,8 @@ if st.button("🚀 Evaluate Candidates"):
                 "score": state.get("score"),
                 "ai": state.get("ai"),
                 "decision": state.get("decision"),
+                # ✅ Newly added line: include matched skills
+                "matched_skills": state.get("matched_skills"),
                 "missing_skills": state.get("missing_skills")
             })
 
@@ -84,6 +86,8 @@ if st.button("🚀 Evaluate Candidates"):
                 "score": 0,
                 "ai": "N/A",
                 "decision": "ERROR",
+                # ✅ Newly added line: placeholder for matched_skills
+                "matched_skills": "ERROR",
                 "missing_skills": str(e)
             })
 
