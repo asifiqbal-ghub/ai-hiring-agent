@@ -1,0 +1,13 @@
+streamlit
+pandas
+numpy
+openpyxl
+langchain
+langchain-openai
+python-dotenv
+PyPDF2
+python-docx
+openai
+matplotlib
+seaborn
+email-validator
